@@ -22,6 +22,10 @@ public class Cliente {
         this.email = email;
         this.cpf = cpf;
     }
+    
+    public boolean validarCPF() {
+        return true;
+    }
 
     @Override
     public String toString() {

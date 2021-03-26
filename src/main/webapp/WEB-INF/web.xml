@@ -4,9 +4,17 @@
         <servlet-name>ClienteServlet</servlet-name>
         <servlet-class>br.senac.sp.conexaobd.servlet.ClienteServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CadastroClienteServlet</servlet-name>
+        <servlet-class>br.senac.sp.conexaobd.servlet.cliente.CadastroClienteServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ClienteServlet</servlet-name>
         <url-pattern>/ClienteServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CadastroClienteServlet</servlet-name>
+        <url-pattern>/CadastroClienteServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
