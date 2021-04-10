@@ -8,6 +8,14 @@
         <servlet-name>CadastroClienteServlet</servlet-name>
         <servlet-class>br.senac.sp.conexaobd.servlet.cliente.CadastroClienteServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ExcluirCliente</servlet-name>
+        <servlet-class>br.senac.sp.conexaobd.servlet.cliente.ExcluirCliente</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AlterarCliente</servlet-name>
+        <servlet-class>br.senac.sp.conexaobd.servlet.cliente.AlterarCliente</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ClienteServlet</servlet-name>
         <url-pattern>/ClienteServlet</url-pattern>
@@ -15,6 +23,14 @@
     <servlet-mapping>
         <servlet-name>CadastroClienteServlet</servlet-name>
         <url-pattern>/CadastroClienteServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ExcluirCliente</servlet-name>
+        <url-pattern>/ExcluirCliente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AlterarCliente</servlet-name>
+        <url-pattern>/AlterarCliente</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
