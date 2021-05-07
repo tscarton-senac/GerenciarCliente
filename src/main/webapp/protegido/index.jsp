@@ -8,9 +8,16 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Menu</title>
     </head>
-    <body>
-        <c:import url="header.jsp"/>
+    <body class="container">
+        <c:import url="../header.jsp"/>
+        <p>Usuário Logado: ${sessionScope.usuario.nome}</p>
+        
         <a href="cadastrarCliente.jsp">Cadastrar Cliente</a><br/>
-        <a href="ClienteServlet">Listar Clientes</a>
+        <a href="ClienteServlet">Listar Clientes</a><br/>
+        
+        <c:if test="${sessionScope.usuario.isGerente()}">
+            <a href="gerente/relatorio.jsp">Relatório</a>
+        </c:if>
+        
     </body>
 </html>

@@ -5,16 +5,17 @@ import br.senac.sp.conexaobd.entidade.Cliente;
 import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
 public class Utils {
     
-    public static void redirecionarURL(boolean ok, HttpServletResponse response) throws IOException {
+    public static void redirecionarURL(boolean ok, HttpServletRequest request, HttpServletResponse response) throws IOException {
         if (ok) {
-            response.sendRedirect("sucesso.jsp");
+            response.sendRedirect(request.getContextPath()+"/sucesso.jsp");
         } else {
-            response.sendRedirect("erro.jsp");
+            response.sendRedirect(request.getContextPath()+"/erro.jsp");
         }
     }
     

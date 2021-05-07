@@ -1,5 +1,6 @@
 
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -10,6 +11,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
-        <h1>Bem vindo ao super sistema de cadastro!</h1>
+        <h1>Bem vindo ao super sistema de cadastro!</h1> 
+        <c:if test="${not empty sessionScope.usuario}">
+            <a href="<c:url value="/LogoutServlet" />">Sair</a>
+        </c:if>
+        
     </body>
 </html>

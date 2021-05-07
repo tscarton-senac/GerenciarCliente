@@ -8,7 +8,7 @@
         <title>Cadastro de Cliente</title>
     </head>
     <body class="container">
-        <c:import url="header.jsp"/>
+        <c:import url="../header.jsp"/>
         <c:if test="${not empty cliente}">
             <form action="AlterarCliente" method="POST">
                 <p>Nome</p>

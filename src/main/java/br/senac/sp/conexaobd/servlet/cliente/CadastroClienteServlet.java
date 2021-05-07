@@ -34,9 +34,9 @@ public class CadastroClienteServlet extends HttpServlet {
         
         // Passo 3: Redirecionar para sucesso.jsp
         if (ok) {
-            response.sendRedirect("sucesso.jsp");
+            response.sendRedirect(request.getContextPath()+"/sucesso.jsp");
         } else {
-            response.sendRedirect("erro.jsp");
+            response.sendRedirect(request.getContextPath()+"/erro.jsp");
         }
         
         

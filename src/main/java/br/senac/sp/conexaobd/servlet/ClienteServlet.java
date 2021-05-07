@@ -34,7 +34,7 @@ public class ClienteServlet extends HttpServlet {
         
         // Passo 3 - Encaminhar para o JSP
         
-        request.getRequestDispatcher("/listaClientes.jsp").forward(request, response);
+        request.getRequestDispatcher("/protegido/listaClientes.jsp").forward(request, response);
         
         
         

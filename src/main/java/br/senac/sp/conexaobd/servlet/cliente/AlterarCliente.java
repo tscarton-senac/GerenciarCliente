@@ -24,7 +24,7 @@ public class AlterarCliente extends HttpServlet {
         
         request.setAttribute("cliente", cliente);
         
-         request.getRequestDispatcher("/cadastrarCliente.jsp").forward(request, response);
+         request.getRequestDispatcher("/protegido/cadastrarCliente.jsp").forward(request, response);
         
         
     }
@@ -39,7 +39,7 @@ public class AlterarCliente extends HttpServlet {
          
          Cliente cliente = new Cliente(nome, email, cpf);
          boolean ok = ClienteDAO.atualizarCliente(cliente);
-         Utils.redirecionarURL(ok, response);
+         Utils.redirecionarURL(ok, request, response);
     }
 
     

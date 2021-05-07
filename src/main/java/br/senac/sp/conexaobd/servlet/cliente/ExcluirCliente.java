@@ -17,7 +17,7 @@ public class ExcluirCliente extends HttpServlet {
             throws ServletException, IOException {
         String cpf = request.getParameter("cpf");
         boolean ok = ClienteDAO.excluirCliente(cpf);
-        Utils.redirecionarURL(ok, response);
+        Utils.redirecionarURL(ok, request,response);
     }
 
 

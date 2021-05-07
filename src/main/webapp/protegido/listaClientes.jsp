@@ -12,8 +12,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Lista de Clientes</title>
     </head>
-    <body>
-        <c:import url="header.jsp"/>
+    <body class="container">
+        <c:import url="../header.jsp"/>
         
         <script>
             function confirmarExclusao(cpf) {
@@ -47,11 +47,13 @@
         
         <h1>Lista de Clientes</h1>
         
-        <table>
+        <table class="table">
             <thead>
                 <th>Nome</th>
                 <th>Email</th>
                 <th>CPF</th>
+                <th></th>
+                <th></th>
             </thead>
             <tbody> 
                 <c:forEach var="cliente" items="${listaClientes}" >
@@ -84,6 +86,6 @@
             </div>
           </div>
         <br/>
-        <c:import url="footer.jsp"/>
+        <c:import url="../footer.jsp"/>
     </body>
 </html>
