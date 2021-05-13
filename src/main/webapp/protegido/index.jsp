@@ -10,7 +10,7 @@
     </head>
     <body class="container">
         <c:import url="../header.jsp"/>
-        <p>Usuário Logado: ${sessionScope.usuario.nome}</p>
+        <p>Usuário Logado: ${sessionScope.usuario.nome} | ${sessionScope.usuario.filial}</p>
         
         <a href="cadastrarCliente.jsp">Cadastrar Cliente</a><br/>
         <a href="ClienteServlet">Listar Clientes</a><br/>

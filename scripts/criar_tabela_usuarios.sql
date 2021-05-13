@@ -9,6 +9,6 @@ CREATE TABLE usuario (
     filial VARCHAR(255)
 );
 
-insert into usuario (nome, login, senha, perfil, filial) values  ('Administrator', 'admin', '1234', 'ADMIN', 'SP');
-insert into usuario (nome, login, senha, perfil, filial) values  ('Mike Wilson', 'mike', '1234', 'GERENTE', 'SP');
-insert into usuario (nome, login, senha, perfil, filial) values  ('John Peter', 'john', '1234', 'VENDEDOR', 'SP');
+insert into usuario (nome, login, senha, perfil, filial) values  ('Administrator', 'admin', '$2a$12$5Uiekn3kh9DdEdVO.XyoRe6xM9dw/v6RHVtOsexJLn4xgHAIbdC1q', 'ADMIN', 'SP');
+insert into usuario (nome, login, senha, perfil, filial) values  ('Mike Wilson', 'mike', '$2a$12$5Uiekn3kh9DdEdVO.XyoRe6xM9dw/v6RHVtOsexJLn4xgHAIbdC1q', 'GERENTE', 'SP');
+insert into usuario (nome, login, senha, perfil, filial) values  ('John Peter', 'john', '$2a$12$5Uiekn3kh9DdEdVO.XyoRe6xM9dw/v6RHVtOsexJLn4xgHAIbdC1q', 'VENDEDOR', 'SP');

@@ -9,6 +9,12 @@
     </head>
     <body class="container">
         <c:import url="header.jsp"/>
+        <c:if test="${param.erroLogin}">
+            <div class="alert alert-danger" role="alert">
+               Erro de Login!
+            </div>
+        </c:if>
+       
         <form action="LoginServlet" method="POST">
             <p>Usuario</p>
             <input type="text" name="login"  class="form-control"/>
