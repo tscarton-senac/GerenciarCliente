@@ -53,7 +53,9 @@ public class ClienteDAO {
                 String nome = rs.getString("nome");
                 String email = rs.getString("email");
                 String cpf = rs.getString("cpf");
+                Integer id = rs.getInt("id");
                 Cliente cliente = new Cliente(nome, email, cpf);
+                cliente.setId(id);
                 clientes.add(cliente);
             }
         } catch (SQLException ex) {

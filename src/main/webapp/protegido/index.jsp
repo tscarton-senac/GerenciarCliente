@@ -14,6 +14,7 @@
         
         <a href="cadastrarCliente.jsp">Cadastrar Cliente</a><br/>
         <a href="ClienteServlet">Listar Clientes</a><br/>
+        <a href="<c:url value="/VendasServlet"/>">Realizar Venda</a><br/>
         
         <c:if test="${sessionScope.usuario.isGerente()}">
             <a href="gerente/relatorio.jsp">Relatório</a>

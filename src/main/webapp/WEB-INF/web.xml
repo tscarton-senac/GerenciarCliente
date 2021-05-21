@@ -32,6 +32,10 @@
         <servlet-name>LogoutServlet</servlet-name>
         <servlet-class>br.senac.sp.conexaobd.servlet.LogoutServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>VendasServlet</servlet-name>
+        <servlet-class>br.senac.sp.conexaobd.servlet.venda.VendasServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ClienteServlet</servlet-name>
         <url-pattern>/protegido/ClienteServlet</url-pattern>
@@ -55,6 +59,10 @@
     <servlet-mapping>
         <servlet-name>LogoutServlet</servlet-name>
         <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VendasServlet</servlet-name>
+        <url-pattern>/VendasServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
